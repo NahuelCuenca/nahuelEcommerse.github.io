@@ -1,0 +1,282 @@
+.cointainerProducts {
+  margin: 0 12%; }
+  .cointainerProducts .navProducts {
+    width: 100%;
+    height: 50px; }
+    .cointainerProducts .navProducts p {
+      font-size: 1.875rem;
+      padding-top: 0.5rem;
+      position: absolute; }
+    .cointainerProducts .navProducts ul {
+      text-align: right;
+      list-style-type: none; }
+      .cointainerProducts .navProducts ul li {
+        margin-top: 0.875rem;
+        margin-right: 0.75rem;
+        font-size: 1.25rem;
+        display: inline-block; }
+        .cointainerProducts .navProducts ul li a {
+          color: black; }
+  .cointainerProducts .bottonProduct {
+    margin-bottom: 30px;
+    display: block;
+    text-align: center; }
+  .cointainerProducts .continerCard {
+    margin: 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: row; }
+    .cointainerProducts .continerCard .cardsProduct {
+      width: 250px;
+      height: 350px;
+      overflow: hidden;
+      margin: 20px 13px;
+      border-radius: 10px;
+      position: relative;
+      background-size: cover;
+      background-position: center top;
+      background: linear-gradient(180deg, #6DC4FF 0%, #0B40FF 52.08%, #3300FF 100%); }
+      .cointainerProducts .continerCard .cardsProduct .card-title {
+        left: 0;
+        bottom: 0;
+        height: 18%;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        background: transparent;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out; }
+        .cointainerProducts .continerCard .cardsProduct .card-title h3 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #fff; }
+      .cointainerProducts .continerCard .cardsProduct .card-Details {
+        position: absolute;
+        bottom: -450px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: inset -4px -4px 20px rgba(255, 255, 255, 0.35), inset 4px 4px 20px rgba(255, 255, 255, 0.35);
+        transition: 0.3s ease-in-out; }
+        .cointainerProducts .continerCard .cardsProduct .card-Details button {
+          float: left;
+          width: 140px;
+          height: 35px;
+          border: none;
+          position: sticky;
+          border-radius: 20px;
+          font-size: 12px;
+          margin: 0px 56px 0px;
+          background: #ff00b8;
+          transition: transform .5s; }
+          .cointainerProducts .continerCard .cardsProduct .card-Details button:hover {
+            color: #ff00b8;
+            background: #fff;
+            transition: .4s;
+            transform: scale(1.1); }
+        .cointainerProducts .continerCard .cardsProduct .card-Details .details h4 {
+          position: absolute;
+          width: 100%;
+          top: 8%;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 30px;
+          color: #fff; }
+        .cointainerProducts .continerCard .cardsProduct .card-Details .details p {
+          position: absolute;
+          width: 70%;
+          margin-left: 15%;
+          margin-right: 15%;
+          top: 25%;
+          text-align: center;
+          color: #E7E7E7;
+          font-weight: bold;
+          font-family: Roboto;
+          font-size: 14px; }
+        .cointainerProducts .continerCard .cardsProduct .card-Details .details h2 {
+          position: absolute;
+          top: 70%;
+          text-align: center;
+          width: 100%;
+          color: #fff;
+          font-size: 19px; }
+          .cointainerProducts .continerCard .cardsProduct .card-Details .details h2 span {
+            font-size: 21px; }
+      .cointainerProducts .continerCard .cardsProduct button {
+        position: absolute;
+        top: 82%;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .cointainerProducts .continerCard .cardsProduct:hover .card-title {
+        bottom: -75px; }
+      .cointainerProducts .continerCard .cardsProduct:hover .card-Details {
+        bottom: 0; }
+
+.active {
+  margin-bottom: 0;
+  border-bottom: 3px solid #d9e260; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Georgia, Times, serif; }
+
+header {
+  width: 100%;
+  height: 40px; }
+  header .logo {
+    width: 145px;
+    position: absolute; }
+  header .menu {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: black 1px solid; }
+    header .menu li {
+      display: inline-block;
+      padding: 30px; }
+      header .menu li a {
+        color: black;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-size: 22px; }
+  header .users {
+    display: flex;
+    float: right;
+    position: absolute;
+    font-size: 20px;
+    right: 6px;
+    top: 32px; }
+    header .users a {
+      text-decoration: none;
+      color: black; }
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  background-color: whitesmoke;
+  border-bottom: black 1px solid; }
+  footer p {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 12px; }
+  footer .logoFooter {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 80px; }
+  footer .politicas {
+    text-align: center;
+    margin-top: 24px; }
+    footer .politicas span a {
+      text-decoration: none;
+      color: black; }
+  footer .redesIcons img {
+    float: right;
+    width: 29px;
+    margin-right: 12px;
+    position: absolute;
+    top: 0; }
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    bottom: 0; }
+    footer p {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+      margin: 10px 140px; }
+    footer .logoFooter {
+      width: 84px; }
+    footer .politicas {
+      margin-top: 20px; }
+    footer .redesIcons img {
+      width: 20px;
+      margin: 0 8px;
+      position: relative;
+      left: 10px;
+      bottom: 22px; } }
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 110px;
+    position: absolute; }
+  .menu {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: black 1px solid; }
+    .menu li {
+      display: inline-block;
+      padding: 25px; }
+      .menu li a {
+        color: black;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-size: 16px; }
+    .menu .users {
+      display: flex;
+      float: right;
+      position: absolute;
+      font-size: 16px;
+      right: 6px;
+      top: 26px; }
+      .menu .users a {
+        text-decoration: none;
+        color: black; } }
+
+@media only screen and (max-width: 480px) {
+  header {
+    width: 100%; }
+    header .logo {
+      width: 48px;
+      position: absolute; }
+    header .menu {
+      list-style-type: none;
+      text-align: center;
+      border-bottom: black 1px solid; }
+      header .menu li {
+        display: inline-block;
+        padding: 6px; }
+        header .menu li a {
+          color: black;
+          letter-spacing: 2px;
+          text-decoration: none;
+          font-size: 10px; }
+    header .users {
+      display: flex;
+      float: right;
+      position: absolute;
+      font-size: 10px;
+      top: 12px; }
+      header .users a {
+        text-decoration: none;
+        color: black; }
+  footer p {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 6px;
+    margin: 0 130px; }
+  footer .logoFooter {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 2px;
+    width: 50px; }
+  footer .politicas {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px; }
+  footer .redesIcons img {
+    float: right;
+    width: 10px;
+    margin-right: 10px; } }

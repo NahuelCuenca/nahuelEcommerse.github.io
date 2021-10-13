@@ -1,0 +1,210 @@
+@import "variables";
+@import "main";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Georgia, Times, serif;
+  }
+
+
+  header{
+      width: 100%;
+      height: 40px;
+      .logo {
+        width: 145px;
+        position: absolute;
+      }
+      .menu {
+        list-style-type: none;
+        text-align: center;
+        border-bottom: black 1px solid;
+        li {
+          display: inline-block;
+          padding: 30px;
+          a {
+            color: black;
+            letter-spacing: 2px;
+            text-decoration: none;
+            font-size: 22px;
+          }
+        }
+       }
+      .users{
+        display: flex;
+        float: right;
+        position:absolute;
+        font-size: 20px;
+        right: 6px;
+        top: 32px;
+        a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+  }
+  
+  footer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      display: inline-block;
+      background-color: whitesmoke;
+      border-bottom: black 1px solid;  
+      p {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 12px;
+      }
+    .logoFooter {
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 2px;
+      width: 80px;
+    }
+    .politicas {
+      text-align: center;
+      margin-top: 24px; 
+      span a{
+      text-decoration: none;
+      color: black;
+    }
+    }
+    .redesIcons img{
+      float: right;
+      width: 29px;
+      margin-right: 12px;
+      position: absolute;
+      top: 0;
+    }
+      
+  }
+  
+@media only screen and (max-width: 1024px) {
+  
+footer{
+  margin-top: 0;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  p {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+      margin: 10px 140px;
+  }
+  .logoFooter {
+      width: 84px;
+  }
+  .politicas {
+      margin-top: 20px; 
+  }
+  .redesIcons img{
+  width: 20px;
+  margin: 0 8px;
+  position: relative;
+  left: 10px;
+  bottom: 22px;
+  }
+}
+}
+  
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 110px;
+    position: absolute;
+  }
+  
+  .menu {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: black 1px solid;
+    li {
+      display: inline-block;
+      padding: 25px;
+      a {
+        color: black;
+         letter-spacing: 2px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+    } 
+    .users{
+      display: flex;
+      float: right;
+      position:absolute;
+      font-size: 16px;
+      right: 6px;
+      top: 26px;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+  } 
+}
+  
+@media only screen and (max-width: 480px) {
+  
+  header {
+    width: 100%;
+    .logo {
+      width: 48px;
+      position: absolute;
+    }
+    .menu {
+      list-style-type: none;
+      text-align: center;
+      border-bottom: black 1px solid;
+      li {
+        display: inline-block;
+        padding: 6px;
+        a {
+          color: black;
+          letter-spacing: 2px;
+          text-decoration: none;
+          font-size: 10px;
+        }
+      }
+    }
+    .users{
+      display: flex;
+      float: right;
+      position:absolute;
+      font-size: 10px;
+      top: 12px;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+footer {
+    p {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 6px;
+    margin: 0 130px;
+  }
+  .logoFooter {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 2px;
+    width: 50px;
+  }
+  .politicas {
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 14px;
+  }
+  .redesIcons img{
+    float: right;
+    width: 10px;
+    margin-right: 10px;
+  
+  }
+}
+}

@@ -1,0 +1,56 @@
+.infomacionSobreNostros {
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.infoContainer {
+    margin: 20px 65px 0 65px;
+}
+
+.infoContainer i{
+    font-size: 26px;
+    padding-right: 1px;
+}
+
+.infoContainer h1 {
+    font-size: 36px;
+    display: inline-block;
+}
+
+.linea {
+    width: 100%;
+    border-top: red 3px solid;
+}
+
+.datosContainer {
+    margin-top: 2.4px;
+    border-top: blue 1.5px solid;
+}
+
+.informacionDato {
+    margin: 0 70px 0 70px;
+    display: block;
+    
+}
+
+.informacionDato h2 {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.infoContainer p{
+    margin-top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.informacionDato p span{
+    font-weight: 600;
+}
+
+
+.users a:hover{
+    text-shadow: 2px 2px 8px rgb(139, 139, 139)
+}
