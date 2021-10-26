@@ -1,0 +1,61 @@
+.mainLR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 11.8% 0;
+    .containerLogin {
+        width: 400px;
+        height: 350px;
+        display: inline-block;
+        border: black 2px solid;
+        background-image: linear-gradient(to right,rgb(24, 24, 24), rgb(70, 0, 70), rgb(100, 0, 100));
+        .encabesadoLogin {
+            border-bottom: black 2px solid; 
+            h2 {
+                padding: 25px 0 25px;
+                text-align: center;
+                color: whitesmoke;
+            }
+        }
+        .formLogin{  
+            form{
+            margin: 15px 0 0 10px;
+            text-align: center;
+            .formLoginInput {
+                margin-bottom: 20px;
+                span {
+                    color: rgba(233, 233, 233, 0.281);
+                    margin-bottom: 6px;
+                    display: block;
+                    font-size: 20px;
+                }
+
+                input{
+                    border: 0;
+                    outline: none;
+                    color: white;
+                    font-size: 16px;
+                    background: none;
+                    padding-bottom: 1.2px;
+                    border-bottom: black 2px solid;
+                }
+            }
+            button {
+                color: white;
+                background: none;
+                border-radius: 20px;
+                border: black 1px solid;
+                padding: 12px 50px 12px 50px;
+            }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

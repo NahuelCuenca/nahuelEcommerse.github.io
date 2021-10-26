@@ -1,37 +1,43 @@
+.novedadesOfertas {
+  margin-top: 54px; }
+
 .cointainerProducts {
   margin: 0 12%; }
   .cointainerProducts .navProducts {
     width: 100%;
     height: 50px; }
     .cointainerProducts .navProducts p {
-      font-size: 1.875rem;
-      padding-top: 0.5rem;
-      position: absolute; }
+      font-size: 30px;
+      padding-top: 8px;
+      position: absolute;
+      text-decoration: underline #d9e260 3px; }
     .cointainerProducts .navProducts ul {
       text-align: right;
       list-style-type: none; }
       .cointainerProducts .navProducts ul li {
-        margin-top: 0.875rem;
-        margin-right: 0.75rem;
-        font-size: 1.25rem;
+        margin-top: 14px;
+        margin-right: 12px;
+        font-size: 20px;
         display: inline-block; }
         .cointainerProducts .navProducts ul li a {
           color: black; }
+        .cointainerProducts .navProducts ul li .active {
+          text-decoration: underline #d9e260 3px; }
   .cointainerProducts .bottonProduct {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: block;
     text-align: center; }
   .cointainerProducts .continerCard {
-    margin: 1.875rem;
+    margin: 30px;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    justify-content: center;
     flex-direction: row; }
     .cointainerProducts .continerCard .cardsProduct {
       width: 250px;
       height: 350px;
       overflow: hidden;
-      margin: 20px 13px;
+      margin: 20px 48px;
       border-radius: 10px;
       position: relative;
       background-size: cover;
@@ -48,7 +54,7 @@
         text-transform: uppercase;
         transition: 0.3s ease-in-out; }
         .cointainerProducts .continerCard .cardsProduct .card-title h3 {
-          font-size: 1.5rem;
+          font-size: 24px;
           font-weight: bold;
           color: #fff; }
       .cointainerProducts .continerCard .cardsProduct .card-Details {
@@ -68,7 +74,7 @@
           position: sticky;
           border-radius: 20px;
           font-size: 12px;
-          margin: 0px 56px 0px;
+          margin: 0 56px;
           background: #ff00b8;
           transition: transform .5s; }
           .cointainerProducts .continerCard .cardsProduct .card-Details button:hover {
@@ -116,9 +122,393 @@
       .cointainerProducts .continerCard .cardsProduct:hover .card-Details {
         bottom: 0; }
 
-.active {
-  margin-bottom: 0;
-  border-bottom: 3px solid #d9e260; }
+@media (min-width: 481px) and (max-width: 768px) {
+  .novedadesOfertas {
+    margin-top: 1000px; }
+  .cointainerProducts .navProducts {
+    background-color: hotpink; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .novedadesOfertas {
+    margin-top: 55px; }
+  .cointainerProducts {
+    margin: 0 8%; }
+    .cointainerProducts .navProducts ul li {
+      margin-top: 20px;
+      font-size: 18px; }
+    .cointainerProducts .continerCard .cardsProduct {
+      width: 200px;
+      height: 300px;
+      margin: 16px 33px; }
+      .cointainerProducts .continerCard .cardsProduct .card-title h3 {
+        font-size: 20px; }
+      .cointainerProducts .continerCard .cardsProduct .card-Details button {
+        margin: 0 15.6%; }
+      .cointainerProducts .continerCard .cardsProduct .card-Details .details h4 {
+        font-size: 24px; }
+      .cointainerProducts .continerCard .cardsProduct .card-Details .details p {
+        font-size: 12px; }
+      .cointainerProducts .continerCard .cardsProduct .card-Details .details h2 {
+        font-size: 17px; }
+        .cointainerProducts .continerCard .cardsProduct .card-Details .details h2 span {
+          font-size: 19px; } }
+
+.containerCart {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: 1200px 700px;
+  grid-template-rows: auto;
+  grid-template-areas: "listCart summary"; }
+  .containerCart .listProduct {
+    height: auto;
+    width: 1100px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 28px;
+    grid-area: listCart;
+    display: inline-block;
+    background: #f3f6ff62; }
+    .containerCart .listProduct .listProductOrdern {
+      display: flex;
+      justify-items: stretch; }
+      .containerCart .listProduct .listProductOrdern table {
+        width: auto;
+        height: auto;
+        margin: 1.5%;
+        background: #f3f6ff;
+        border: 1px black solid; }
+        .containerCart .listProduct .listProductOrdern table tr th {
+          text-align: center;
+          font-size: 20px;
+          padding: 10px 14px;
+          border-right: black 1px solid; }
+        .containerCart .listProduct .listProductOrdern table tr td {
+          text-align: center;
+          border: black 1px solid;
+          padding: 8px 8px 8px 2px;
+          border-right: black 1px solid;
+          font-size: 17px; }
+          .containerCart .listProduct .listProductOrdern table tr td img {
+            max-width: 60px;
+            max-height: 60px; }
+          .containerCart .listProduct .listProductOrdern table tr td p {
+            display: inline-block;
+            text-align: left;
+            text-align: center;
+            text-align: 17px;
+            padding: 18px 40px 18px 0; }
+          .containerCart .listProduct .listProductOrdern table tr td button {
+            background-color: #ff7b00;
+            color: white;
+            border: none;
+            width: 18px;
+            border-radius: 4px;
+            padding: 0; }
+          .containerCart .listProduct .listProductOrdern table tr td input {
+            width: 18px;
+            text-align: center;
+            border: none;
+            background: black;
+            color: white; }
+          .containerCart .listProduct .listProductOrdern table tr td span {
+            padding: 0 8px; }
+  .containerCart .compra {
+    justify-content: center;
+    margin: 30px;
+    width: 600px;
+    height: 460px;
+    grid-area: summary;
+    background: #f3f6ff62; }
+    .containerCart .compra .compraContent {
+      margin: 0; }
+      .containerCart .compra .compraContent .cupon input {
+        width: 340px;
+        height: 44px;
+        font-size: 18px;
+        border-radius: 4px;
+        border: 1px solid #dddddd;
+        margin: 16px 13px 0 10px;
+        background: none; }
+      .containerCart .compra .compraContent .cupon button {
+        background: none;
+        border: 1px solid #ff7b00;
+        width: 220px;
+        height: 46px;
+        padding: 2px 0;
+        font-size: 18px; }
+      .containerCart .compra .compraContent .priceContent {
+        margin: 4% 3% 8% 3%;
+        background: #f3f6ff; }
+        .containerCart .compra .compraContent .priceContent .priceContentPosicion {
+          padding: 20px; }
+          .containerCart .compra .compraContent .priceContent .priceContentPosicion h1 {
+            font-size: 34px;
+            margin-bottom: 10px; }
+          .containerCart .compra .compraContent .priceContent .priceContentPosicion p {
+            font-size: 19px;
+            margin: 18px 0; }
+            .containerCart .compra .compraContent .priceContent .priceContentPosicion p span {
+              font-size: 19px;
+              float: right; }
+          .containerCart .compra .compraContent .priceContent .priceContentPosicion h2 span {
+            font-size: 20px;
+            float: right; }
+    .containerCart .compra .btn, .containerCart .compra .btn_vacias, .containerCart .compra .btn_comprar {
+      background: none;
+      border: 1px solid #ff7b00;
+      width: 220px;
+      height: 46px;
+      padding: 2px 0;
+      font-size: 18px;
+      float: right;
+      margin-right: 52px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: .3s ease all;
+      position: relative;
+      overflow: hidden; }
+      .containerCart .compra .btn span, .containerCart .compra .btn_vacias span, .containerCart .compra .btn_comprar span {
+        position: relative;
+        z-index: 2;
+        transition: .3s ease all; }
+      .containerCart .compra .btn::after, .containerCart .compra .btn_vacias::after, .containerCart .compra .btn_comprar::after {
+        content: "";
+        width: 140%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: calc(-100% - 80px);
+        border-right: 80px solid transparent;
+        transition: .9s ease-in-out all; }
+      .containerCart .compra .btn:hover::after, .containerCart .compra .btn_vacias:hover::after, .containerCart .compra .btn_comprar:hover::after {
+        left: 0; }
+    .containerCart .compra .btn_vacias::after {
+      border-bottom: 80px solid red; }
+    .containerCart .compra .btn_comprar::after {
+      border-bottom: 80px solid #00c300; }
+
+@media (max-width: 480px) {
+  .containerCart {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 480;
+    grid-template-rows: auto auto;
+    grid-template-areas: "listCart" "summary"; }
+    .containerCart .listProduct {
+      width: 470px;
+      margin: 0; }
+      .containerCart .listProduct .listProductOrdern table {
+        margin: 0; }
+        .containerCart .listProduct .listProductOrdern table tr th {
+          font-size: 10px;
+          padding: 8px 7px; }
+        .containerCart .listProduct .listProductOrdern table tr td {
+          padding: 4px 4px 4px 1px;
+          font-size: 10px; }
+          .containerCart .listProduct .listProductOrdern table tr td img {
+            max-width: 50px;
+            max-height: 50px; }
+          .containerCart .listProduct .listProductOrdern table tr td p {
+            text-align: 8px;
+            padding: 4px 2px 4px 0; }
+          .containerCart .listProduct .listProductOrdern table tr td button {
+            width: 15px; }
+          .containerCart .listProduct .listProductOrdern table tr td input {
+            width: 15px;
+            text-align: center; }
+          .containerCart .listProduct .listProductOrdern table tr td span {
+            padding: 0 8px;
+            font-size: 10px; }
+    .containerCart .compra {
+      width: 470px;
+      margin: 26px 5px 10px 10px; }
+      .containerCart .compra .compraContent .cupon input {
+        width: 230px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 4px;
+        margin: 0; }
+      .containerCart .compra .compraContent .cupon button {
+        width: 230px;
+        height: 30px;
+        font-size: 18px;
+        margin: 0; }
+      .containerCart .compra .compraContent .priceContent .priceContentPosicion h1 {
+        font-size: 26px;
+        margin-bottom: 8px; }
+      .containerCart .compra .compraContent .priceContent .priceContentPosicion p {
+        font-size: 16px;
+        margin: 16px 0; }
+        .containerCart .compra .compraContent .priceContent .priceContentPosicion p span {
+          font-size: 16px; }
+      .containerCart .compra .compraContent .priceContent .priceContentPosicion h2 {
+        font-size: 18px; }
+        .containerCart .compra .compraContent .priceContent .priceContentPosicion h2 span {
+          font-size: 17px; }
+    .containerCart .btn, .containerCart .compra .btn_vacias, .containerCart .compra .btn_comprar {
+      width: 235px;
+      height: 48px;
+      padding: 1px 0;
+      font-size: 18px;
+      margin: 0; } }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .containerCart {
+    margin-top: 56px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 518px 250px;
+    grid-template-rows: auto;
+    grid-template-areas: "listCart summary"; }
+    .containerCart .listProduct {
+      width: 500px; }
+      .containerCart .listProduct .listProductOrdern table {
+        margin: 0 22px 0 0; }
+        .containerCart .listProduct .listProductOrdern table tr th {
+          font-size: 14px;
+          padding: 8px 7px; }
+        .containerCart .listProduct .listProductOrdern table tr td {
+          padding: 4px 4px 4px 1px;
+          font-size: 12px; }
+          .containerCart .listProduct .listProductOrdern table tr td img {
+            max-width: 50px;
+            max-height: 50px; }
+          .containerCart .listProduct .listProductOrdern table tr td p {
+            text-align: 10px;
+            padding: 8px 8px 8px 0; }
+          .containerCart .listProduct .listProductOrdern table tr td button {
+            width: 16px; }
+          .containerCart .listProduct .listProductOrdern table tr td input {
+            width: 16px; }
+          .containerCart .listProduct .listProductOrdern table tr td span {
+            padding: 0 8px;
+            font-size: 16px; }
+    .containerCart .compra {
+      width: 240px;
+      margin: 5px; }
+      .containerCart .compra .compraContent .cupon input {
+        width: 230px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 4px; }
+      .containerCart .compra .compraContent .cupon button {
+        width: 230px;
+        height: 30px;
+        font-size: 18px;
+        margin: 6px 0 0 10px; }
+      .containerCart .compra .compraContent .priceContent .priceContentPosicion h1 {
+        font-size: 26px;
+        margin-bottom: 8px; }
+      .containerCart .compra .compraContent .priceContent .priceContentPosicion p {
+        font-size: 16px;
+        margin: 16px 0; }
+        .containerCart .compra .compraContent .priceContent .priceContentPosicion p span {
+          font-size: 16px; }
+      .containerCart .compra .compraContent .priceContent .priceContentPosicion h2 {
+        font-size: 18px; }
+        .containerCart .compra .compraContent .priceContent .priceContentPosicion h2 span {
+          font-size: 17px; }
+      .containerCart .compra .btn, .containerCart .compra .btn_vacias, .containerCart .compra .btn_comprar {
+        width: 100px;
+        height: 48px;
+        padding: 1px 0;
+        font-size: 16px;
+        margin: 8px 8px; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .containerCart {
+    margin-top: 56px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 624px 400px;
+    grid-template-rows: auto;
+    grid-template-areas: "listCart summary"; }
+    .containerCart .listProduct {
+      width: 600px; }
+      .containerCart .listProduct .listProductOrdern table {
+        margin: 0 10px 0 0; }
+        .containerCart .listProduct .listProductOrdern table tr th {
+          font-size: 14px;
+          padding: 8px 7px; }
+        .containerCart .listProduct .listProductOrdern table tr td {
+          padding: 6px 6px 6px 2px;
+          font-size: 12px; }
+          .containerCart .listProduct .listProductOrdern table tr td img {
+            max-width: 60px;
+            max-height: 60px; }
+          .containerCart .listProduct .listProductOrdern table tr td p {
+            text-align: 14px;
+            padding: 10px 10px 10px 0; }
+          .containerCart .listProduct .listProductOrdern table tr td button {
+            width: 18px; }
+          .containerCart .listProduct .listProductOrdern table tr td input {
+            width: 20px; }
+          .containerCart .listProduct .listProductOrdern table tr td span {
+            padding: 0 8px;
+            font-size: 16px; }
+    .containerCart .compra {
+      width: 400px;
+      height: 420px;
+      margin: 10px; }
+      .containerCart .compra .compraContent .cupon input {
+        width: 240px;
+        height: 34px;
+        font-size: 18px;
+        border-radius: 4px;
+        margin: 16px 4px 0 10px; }
+      .containerCart .compra .compraContent .cupon button {
+        width: 130px;
+        height: 34px;
+        padding: 2px 0;
+        font-size: 18px; }
+      .containerCart .compra .btn, .containerCart .compra .btn_vacias, .containerCart .compra .btn_comprar {
+        width: 180px;
+        height: 36px;
+        padding: 2px 0;
+        font-size: 18px;
+        margin: 8px 10px; } }
+
+.mainLR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 11.8% 0; }
+  .mainLR .containerLogin {
+    width: 400px;
+    height: 350px;
+    display: inline-block;
+    border: black 2px solid;
+    background-image: linear-gradient(to right, #181818, #460046, #640064); }
+    .mainLR .containerLogin .encabesadoLogin {
+      border-bottom: black 2px solid; }
+      .mainLR .containerLogin .encabesadoLogin h2 {
+        padding: 25px 0 25px;
+        text-align: center;
+        color: whitesmoke; }
+    .mainLR .containerLogin .formLogin form {
+      margin: 15px 0 0 10px;
+      text-align: center; }
+      .mainLR .containerLogin .formLogin form .formLoginInput {
+        margin-bottom: 20px; }
+        .mainLR .containerLogin .formLogin form .formLoginInput span {
+          color: rgba(233, 233, 233, 0.281);
+          margin-bottom: 6px;
+          display: block;
+          font-size: 20px; }
+        .mainLR .containerLogin .formLogin form .formLoginInput input {
+          border: 0;
+          outline: none;
+          color: white;
+          font-size: 16px;
+          background: none;
+          padding-bottom: 1.2px;
+          border-bottom: black 2px solid; }
+      .mainLR .containerLogin .formLogin form button {
+        color: white;
+        background: none;
+        border-radius: 20px;
+        border: black 1px solid;
+        padding: 12px 50px 12px 50px; }
 
 * {
   margin: 0;
@@ -154,14 +544,14 @@ header {
     header .users a {
       text-decoration: none;
       color: black; }
+      header .users a:hover {
+        text-shadow: 2px 2px 8px #8b8b8b; }
 
 footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  position: relative;
   width: 100%;
   height: 100px;
-  display: inline-block;
+  display: block;
   background-color: whitesmoke;
   border-bottom: black 1px solid; }
   footer p {
@@ -182,60 +572,9 @@ footer {
   footer .redesIcons img {
     float: right;
     width: 29px;
-    margin-right: 12px;
-    position: absolute;
-    top: 0; }
+    margin-right: 12px; }
 
-@media only screen and (max-width: 1024px) {
-  footer {
-    margin-top: 0;
-    position: relative;
-    left: 0;
-    bottom: 0; }
-    footer p {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 12px;
-      margin: 10px 140px; }
-    footer .logoFooter {
-      width: 84px; }
-    footer .politicas {
-      margin-top: 20px; }
-    footer .redesIcons img {
-      width: 20px;
-      margin: 0 8px;
-      position: relative;
-      left: 10px;
-      bottom: 22px; } }
-
-@media only screen and (max-width: 768px) {
-  .logo {
-    width: 110px;
-    position: absolute; }
-  .menu {
-    list-style-type: none;
-    text-align: center;
-    border-bottom: black 1px solid; }
-    .menu li {
-      display: inline-block;
-      padding: 25px; }
-      .menu li a {
-        color: black;
-        letter-spacing: 2px;
-        text-decoration: none;
-        font-size: 16px; }
-    .menu .users {
-      display: flex;
-      float: right;
-      position: absolute;
-      font-size: 16px;
-      right: 6px;
-      top: 26px; }
-      .menu .users a {
-        text-decoration: none;
-        color: black; } }
-
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   header {
     width: 100%; }
     header .logo {
@@ -280,3 +619,52 @@ footer {
     float: right;
     width: 10px;
     margin-right: 10px; } }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  header .logo {
+    width: 99px;
+    position: absolute; }
+  header .menu {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: black 1px solid; }
+    header .menu li {
+      display: inline-block;
+      padding: 19px; }
+      header .menu li a {
+        color: black;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-size: 16px; }
+  header .users {
+    font-size: 16px;
+    position: absolute;
+    right: 1px;
+    top: 19px; }
+    header .users a {
+      text-decoration: none;
+      color: black; }
+  footer .redesIcons img {
+    width: 17px; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    bottom: 0; }
+    footer p {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+      margin: 10px 140px; }
+    footer .logoFooter {
+      width: 84px; }
+    footer .politicas {
+      margin-top: 20px; }
+    footer .redesIcons img {
+      width: 20px;
+      margin: 0 8px;
+      position: relative;
+      left: 10px;
+      bottom: 22px; } }
