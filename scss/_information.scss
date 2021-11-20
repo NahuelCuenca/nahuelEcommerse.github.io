@@ -1,0 +1,103 @@
+.mainSup{
+    .infomacionSobreNostros {
+        width: 100%;
+        display: inline-block;
+        margin-top: 50px;
+        .infoContainer {
+            margin: 20px 65px 0 65px;
+            i{
+                font-size: 26px;
+                padding-right: 1px;
+            }
+            h1 {
+                font-size: 36px;
+                display: inline-block;
+            }
+            
+            .linea {
+                width: 100%;
+                border-top: red 3px solid;
+            }
+            .datosContainer {
+                margin-top: 2.4px;
+                border-top: blue 1.5px solid;
+                .informacionDato {
+                    margin: 10px 70px 50px;
+                    display: block;
+                    h2 {
+                        margin-top: 24px;
+                        text-align: center;
+                        font-size: 28px;
+                    }
+                    p{
+                        margin-top: 14px;
+                        font-size: 20px;
+                        text-align: center;
+                        span{
+                            font-weight: 600;
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+.mainSup{
+    margin: 0;
+    .infomacionSobreNostros {
+        margin-top: 0;
+        .infoContainer{
+            margin: 0 35px ;
+            i{
+                font-size: 16px;
+            }
+            h1{
+                font-size: 26px;
+            }
+            .datosContainer{
+                    .informacionDato{
+                        margin: 10px 50px 40px;
+                        h2{
+                            margin-top: 14px;
+                            font-size: 22px;
+                        }
+                        p{
+                            margin-top: 8;
+                            font-size: 16px;
+                        }
+                    }
+            }
+        }
+    }   
+}
+}
+@media (min-width: 481px) and (max-width: 768px){
+.mainSup{
+    margin: 0;
+    .infomacionSobreNostros{
+        margin-top: 6px;
+        .infoContainer{
+            .datosContainer{
+                .informacionDato{
+                    margin: 20px 60px 50px;
+                    h2{
+                        margin-top: 10px;
+                    }
+                    p{
+                        margin-top: 10px;
+                        font-size: 16px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+}
