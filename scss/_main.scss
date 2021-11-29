@@ -55,6 +55,10 @@
             background-size: cover;
             background-position: center top;
             background: linear-gradient(180deg, #6DC4FF 0%, #0B40FF 52.08%, #3300FF 100%);
+            img{
+                width: 100%;
+                height: auto;
+            }
             .card-title {
                 left: 0;
                 bottom: 0;

@@ -45,6 +45,9 @@
       background-size: cover;
       background-position: center top;
       background: linear-gradient(180deg, #6DC4FF 0%, #0B40FF 52.08%, #3300FF 100%); }
+      .cointainerProducts .continerCard .cardsProduct img {
+        width: 100%;
+        height: auto; }
       .cointainerProducts .continerCard .cardsProduct .card-title {
         left: 0;
         bottom: 0;
